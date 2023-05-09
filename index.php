@@ -70,6 +70,7 @@
             </label>
 
             <input type="submit" value="Отправить">
+            <a href="login.php" class="auth-button">Авторизация</a>
         </form>
           <script>
               const select = document.getElementById('birth_year');
