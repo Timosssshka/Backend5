@@ -91,7 +91,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
             <input type="email" name="email" id="email" value="<?= $user['email'] ?>" required> <br/>
  
             <label for="birth_year">Birth year:</label>
-            <input type="number" name="birth_year" id="birth_year" value="<?= $user['birth_year'] ?>" min="1900" max="2023" required> <br/>
+            <input type="number" name="birth_year" id="birth_year" value="<?= $user['birth_year'] ?>" min="1923" max="2023" required> <br/>
  
             <label>Gender:</label>
             <label><input type="radio" name="gender" value="male" <?= $user['gender'] == 'male' ? 'checked' : '' ?> required> Male</label>
