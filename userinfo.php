@@ -105,6 +105,8 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
  
             <label for="bio">Biography:</label>
             <textarea name="bio" id="bio" required><?= $user['bio'] ?></textarea> <br/>
+            <label>
+                <input type="checkbox" name="contract" value="accepted" <?= $user['contract'] == 'accepted' ? 'checked' : '' ?>> С контрактом ознакомлен</label>
 
  
             <input type="submit" value="Save changes">
