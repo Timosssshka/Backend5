@@ -67,7 +67,7 @@
 
             <label>
                 <input type="checkbox" name="contract" value="accepted" <?= getChecked('contract', 'accepted') ?>> С контрактом ознакомлен
-            </label><br/>
+            </label>
 
             <input type="submit" value="Отправить">
             <a href="login.php" class="auth-button">Авторизация</a>
