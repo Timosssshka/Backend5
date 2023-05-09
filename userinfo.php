@@ -99,9 +99,9 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
  
             <label>Num of limbs:</label>
 <!--             <input type="number" name="limbs" id="limbs" value="<?= $user['limbs'] ?>" min="1" max="4" required> <br/> -->
-            <label><input type="radio" checked="checked" name="limbs" id="limbs" value="<?= $user['limbs'] ?>">2</label>
-            <label><input type="radio" name="limbs" id="limbs" value="<?= $user['limbs'] ?>">4</label>
-            <label><input type="radio" name="limbs" id="limbs" value="<?= $user['limbs'] ?>">6</label>
+            <label><input type="radio" checked="checked" name="limbs" id="limbs" value="2" <?= $user['limbs'] == '2' ? 'checked' : '' ?> required>2</label>
+            <label><input type="radio" name="limbs" id="limbs" value="4" <?= $user['limbs'] == '4' ? 'checked' : '' ?> required>4</label>
+            <label><input type="radio" name="limbs" id="limbs" value="6" <?= <?= $user['limbs'] == '6' ? 'checked' : '' ?> required>6</label>
  
             <label for="bio">Biography:</label>
             <textarea name="bio" id="bio" required><?= $user['bio'] ?></textarea> <br/>
