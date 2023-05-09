@@ -17,7 +17,7 @@
             unset($_SESSION['error']);
         }
         ?>
-        <form action="login_submit.php" method="POST" id="form">
+        <form action="login_subm.php" method="POST" id="form">
             <label for="login">Логин:</label>
             <input type="text" name="login" id="login" required>
  
